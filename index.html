@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web-player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="side-bar">
+            <div class="nav">
+                <div class="nav-option home">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option">
+                        <i class="fa-solid fa-book-open"></i>
+                        <a href="#">Your library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box1 box " >
+                        <div>Create your first playlist </div>
+                        <p>it's easy we will help your..</p>
+                        <button>Create playlist</button>
+                    </div>
+                    <div class="box2 box">
+                        <div>Let's find some podcasts to follow</div>
+                        <p>We will keep you update on new episodes</p>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="nav-icons">
+                    <img src="./assets/backward_icon.png" alt="icons">
+                    <img src="./assets/forward_icon.png" class="hide" alt="icons">
+                </div>
+                <div class="nav-badges">
+                    <button class="btn-explore hide">Explore Premium</button>
+                    <button class="btn-install"><i class="fa-solid fa-download"></i>Install App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <div>
+
+
+                <h2>Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of most played...</p>
+                    </div>
+                </div>
+
+                <div>
+
+                    <h2>Trending now near you</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="./assets/card2img.jpeg">
+                            <p class="card-title">Top 50 - Global</p>
+                            <p class="card-info">Your daily updates of most played</p>
+                        </div>
+    
+                        <div class="card">
+                            <img src="./assets/card3img.jpeg">
+                            <p class="card-title">Top 50 - Global</p>
+                            <p class="card-info">Your daily updates of most played</p>
+                        </div>
+    
+                        <div class="card">
+                            <img src="./assets/card4img.jpeg">
+                            <p class="card-title">Top 50 - Global</p>
+                            <p class="card-info">Your daily updates of most played</p>
+                        </div>
+    
+                        <div class="card">
+                            <img src="./assets/card3img.jpeg">
+                            <p class="card-title">Top 50 - Global</p>
+                            <p class="card-info">Your daily updates of most played</p>
+                        </div>
+    
+                        <div class="card">
+                            <img src="./assets/card4img.jpeg">
+                            <p class="card-title">Top 50 - Global</p>
+                            <p class="card-info">Your daily updates of most played</p>
+                        </div>
+                        
+                </div>
+
+
+                    <h2>Featured charts</h2>
+                    <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of most played...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/card6img.jpeg">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of most played...</p>
+                    </div>
+                </div>
+                    
+                </div>
+
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+
+        </div>
+    </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="https://s.saregama.tech/image/c/fw_485/9/2c/b3/the-live-in-song_1440x1440_1644991026.jpg">
+                <div class="para">
+                    Tujhe kitna chahne lage hum(from kabir singh)<br>
+                    Argit Singh , mithoon...
+                </div>
+                <i class="fa-solid fa-square-plus"></i>
+                
+            </div>
+            <div class="player">
+                <div class="player-icons">
+                    <img class="icon" src="./assets/player_icon2.png" >
+                    <img class="icon" src="./assets/player_icon1.png" >
+                    <img class="icon middle" style="height: 2rem;" src="./assets/player_icon3.png" >
+                    <img class="icon" src="./assets/player_icon4.png" >
+                    <img class="icon" src="./assets/player_icon5.png" >
+                </div>
+                <div class="volume">
+                    0:00
+                    <input type="range" min="0" max="0" id="volume">
+                    3:33
+                    <label for="volume"></label>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-satellite-dish"></i>
+                <i class="fa-solid fa-volume-off"></i>
+                <input type="range" id="controls-vol" min="0" max="10">
+                <i class="fa-solid fa-minimize"></i>
+                <i class="fa-solid fa-expand"></i>
+            </div>
+        </div>
+    
+</body>
+</html>
